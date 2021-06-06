@@ -1,0 +1,71 @@
+.navbar{
+    background-color: #426572; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#navLogo{
+    border-radius:100vh;
+}
+
+#navEscrita{
+    font-size:20px;
+}
+
+#imgPagina{
+    border-radius:50%;
+}
+
+#imgPagina2{
+    border-radius:50%;
+    width: 250px;
+}
+
+#textDesafio{
+    font-weight: bold;
+}
+
+#btnAceitar {
+    color: white; 
+    background-color: #426572;
+} 
+
+#linkFooter{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio Enlighten</title>
+  <!--Boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!--PDF generator-->
+  <link rel="stylesheet" type="t" href="https://printjs-4de6.kxcdn.com/print.min.css">
+  <link rel="sortcut icon" href="images/brain brain.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">   
+
+</head>
+<body id="inicio">
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container-fluid">
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+        <div class="navbar-nav ml-auto text-center">         
+          <a id="navLogo" class="nav-item js-scroll-trigger nav-link active col-sm img-fluid d-md-block d-lg-none" href="https://enlightenbrasil.com.br/"
+            target="_blank"><img src="images/logo.svg" width="30px" height="30px"></a>
+          <a id="navEscrita" class="nav-item js-scroll-trigger nav-link active col-sm" id="nav-center" href="#inicio">Inicio</a>
+          <a id="navLogo" class="nav-item js-scroll-trigger nav-link active col-sm img-fluid d-none d-lg-block " href="https://enlightenbrasil.com.br/"
+            target="_blank"><img src="images/logo.svg" width="30px" height="30px"></a>
+          <a id="navEscrita" class="nav-item js-scroll-trigger nav-link active col-sm" href="#formulario">Formulário</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <br>
+      <div class="container-fluid pt-5">
+        <div class="container ">
+          <div class="row overflow-hidden">
+            
+            <div class="col-lg-6 py-3 d-none d-lg-block">
+              <img id="imgPagina" src="images/fotoPagina.jpg" class="img-fluid pb-5">
+            </div>
+
+            <div class="d-md-block d-lg-none">
+              <div class=" d-flex align-items-center justify-content-center">
+                <img id="imgPagina2" src="images/fotoPagina.jpg" class="img-fluid">
+              </div>
+            </div>
+
+            <div class="col-lg-6 text-left my-3 py-2">
+              <br>
+              <h1 id="textDesafio" class="text-center mb-5" >Desafio Estágio Enlighten</h1>
+              <br>
+              <h2 class="mb-2 text-center"><b>Nosso Objetivo</b> </h2>
+              <h5 class="mb-5 text-center">Temos como foco a segurança e facilidade de acesso, para que nossos usuários
+                tenham a melhor experiência possível.</h5>
+              <hr class="mx-10 mb-5">
+              <h2 class="mt-2 text-center"> <b>Não armazenamos dados</b> </h2>
+              <h5 class="text-center">Para conseguirmos manter a segurança, não armazenamos nenhum dado, todos somem após
+                a página ser atualizada, assim prevenindo que dados sensíveis sejam expostos.</h5>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-3">
+        <hr id="formulario" class="my-3">
+      </div>
+      <br>
+
+    </section>
+
+    <section>
+      <br>
+      <h2 class="text-center p-2">Formulário</h2>
+
+      <div class="container py-4 shadow-sm">
+        <form class="form-group py-3 row" id="printJS-form" onclick="salvarDados(event)">
+          <div class="col-md-6">
+
+            <div class="form-group py-2">
+              <label for="InputNome"> <b><i class="mr-2"></i>Nome</b></label>
+              <input id="inputNome" type="name" required class="form-control" placeholder="Nome Completo">
+            </div>
+
+            <div class="form-group py-2">
+              <label for="inputCPF"><b><i class="mr-2"></i>CPF</b></label>
+              <input id="inputCPF" type="text" required class="form-control" placeholder="XXX.XXX.XXX-XX">
+            </div>
+
+            <div class="form-group py-2">
+              <label for="inputEndereco"><b><i class="mr-2"></i>Endereço</b></label>
+              <input id="inputEndereco" type="text" required class="form-control" placeholder="Endereço, Número e Complemento">
+            </div>
+
+            <div class="form-group py-2">
+              <label for="inputCEP"><b><i class="mr-2"></i>CEP</b></label>
+              <input id="inputCEP" type="text" required class="form-control" placeholder="XXXXX-XXX">
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+
+            <div class="form-group py-2">
+              <label for="inputValor"><b><i class=" mr-2"></i>Valor</b></label>
+              <input id="inputValor" type="text" required class="form-control" placeholder="R$ XXX,XX">
+            </div>
+
+
+            <div class="form-group py-2">
+              <label for="inputDescricao"><b><i class="mr-2"></i>Descrição</b></label>
+              <textarea id="inputDescricao" class="form-control" required cols="80" rows="2"
+                placeholder="Motivo do Pagamento"></textarea>
+            </div>
+
+            <div class="form-group py-2">
+              <div class="form-floating">
+                <select id="stateSelector" class="form-select" aria-label="Estado" onchange="filterCity()">
+                  <option selected>Selecione o seu Estado</option>
+                </select>
+                <label for="floatingSelect">Estado</label>
+              </div>
+            </div>
+
+            <div class="form-group py-2">
+              <div class="form-floating">
+                <select id="citySelector" class="form-select" aria-label="Cidade" disabled> 
+                  <option selected>Selecione a sua Cidade</option>
+                </select>
+                <label for="floatingSelect">Cidade</label>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-12">
+            <div class="form-group text-center mt-5">
+              <button id="btnAceitar" type="submit" class="btn px-5" onclick="CriaPDF()">Aceitar</button>
+            </div>
+          </div>
+
+        </form>
+
+    </section>
+  </main>
+
+  <footer class="text-muted">
+    <div class="container text-center">
+      <a id="linkFooter" href="https://github.com/alej404" target="_blank" class="nav-link">Copyright 2021 - Juan Alejandro</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+  <script src=" https://printjs-4de6.kxcdn.com/print.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/print.js"></script>
+
+</body>
+</html>
